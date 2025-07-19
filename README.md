@@ -1,1 +1,7 @@
 # RecipeGenerator
+This project, developed in Java, aims to create a recipe recommendation system based on the availability of ingredients provided by the user. The system's logic is based on the use of efficient data structures and graphs to model connections between ingredients, allowing it to identify complete recipes and suggest alternatives even when ingredients are missing.
+The application not only uses traditional structures such as lists and sets, but also implements a custom hash table (HashTable) to map relationships between ingredients, and a directed graph (RecipeGraph) that represents the co-occurrence of ingredients in recipes. These elements are essential for identifying connections and possible substitutions between ingredients.
+Each recipe is represented by a name and a set of ingredients. The system allows the user to enter the ingredients they have available, and an analysis is then performed to determine:
+• Complete recipes, where all ingredients are available;
+• Incomplete recipes, which are nearly complete (with a maximum of two ingredients missing). The application follows a modular architecture, with classes responsible for reading data, storing recipes, building the graph, and providing recommendation logic.
+The application's input and output are designed to be simple and straightforward, allowing for direct use by users or integration with intelligent systems and automated testing.
