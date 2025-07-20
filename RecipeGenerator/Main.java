@@ -18,7 +18,7 @@ public class Main {
         String[] inputArray = input.trim().split("\\s+");
 
         Set<Ingredient> availableIngredients = Arrays.stream(inputArray)
-                .map(String::trim) // Remove espaços extras
+                .map(String::trim) // Remove espaços extra
                 .map(String::toLowerCase) // Converte para minúsculas
                 .map(Ingredient::new) // Cria objeto Ingredient
                 .collect(Collectors.toSet()); // Converte para conjunto
